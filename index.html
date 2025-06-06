@@ -13,11 +13,11 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="יוצאים אל האור | סדנת צילום ועריכה מהסמארטפון">
     <meta property="og:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית: עם אלעזר ריגר.">
-    <meta property="og:image" content="https://photography-course.vercel.app/og-image.jpg">
+    <meta property="og:image" content="og-image.jpg">
     <meta property="og:image:alt" content="יוצאים אל האור - סדנת צילום ועריכה מהסמארטפון - אלעזר ריגר">
     <meta property="og:image:width" content="1712">
     <meta property="og:image:height" content="1026">
-    <meta property="og:url" content="https://photography-course.vercel.app/">
+    <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="יוצאים אל האור">
     <meta property="og:locale" content="he_IL">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="יוצאים אל האור | סדנת צילום ועריכה מהסמארטפון">
     <meta name="twitter:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית:">
-    <meta name="twitter:image" content="https://photography-course.vercel.app/og-image.jpg">
+    <meta name="twitter:image" content="og-image.jpg">
     
     <!-- Additional Meta Tags -->
     <meta name="robots" content="index, follow">
@@ -1121,6 +1121,30 @@
     </style>
 </head>
 <body>
+    <!-- Dynamic Meta Tags Update -->
+    <script>
+        // Update meta tags with current domain
+        const currentDomain = window.location.origin;
+        
+        // Update og:image
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage && !ogImage.content.startsWith('http')) {
+            ogImage.content = currentDomain + '/' + ogImage.content;
+        }
+        
+        // Update twitter:image
+        const twitterImage = document.querySelector('meta[name="twitter:image"]');
+        if (twitterImage && !twitterImage.content.startsWith('http')) {
+            twitterImage.content = currentDomain + '/' + twitterImage.content;
+        }
+        
+        // Update og:url
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) {
+            ogUrl.content = currentDomain + '/';
+        }
+    </script>
+
     <header class="header">
         <div class="header-content">
             <div class="logo-container">
