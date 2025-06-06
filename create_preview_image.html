@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Image Creator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Heebo', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            color: white;
+            width: 1200px;
+            height: 630px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .preview-container {
+            text-align: center;
+            padding: 60px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .main-title {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        
+        .subtitle {
+            font-size: 36px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+        
+        .author {
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 1px, transparent 1px),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 1px, transparent 1px),
+                radial-gradient(circle at 40% 60%, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px, 30px 30px, 70px 70px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="preview-container">
+        <h1 class="main-title">יוצאים אל האור</h1>
+        <h2 class="subtitle">סדנת צילום ועריכה מהסמארטפון</h2>
+        <h3 class="author">אלעזר ריגר</h3>
+    </div>
+</body>
+</html> 
