@@ -12,7 +12,7 @@
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="יוצאים אל האור | סדנת צילום ועריכה מהסמארטפון">
-    <meta property="og:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית עם אלעזר ריגר.">
+    <meta property="og:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית: עם אלעזר ריגר.">
     <meta property="og:image" content="https://photography-course.vercel.app/og-image.jpg">
     <meta property="og:image:alt" content="יוצאים אל האור - סדנת צילום ועריכה מהסמארטפון - אלעזר ריגר">
     <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="יוצאים אל האור | סדנת צילום ועריכה מהסמארטפון">
-    <meta name="twitter:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית.">
+    <meta name="twitter:description" content="סדנת צילום ועריכה מהסמארטפון למי שיש לו מסר לעולם. שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית:">
     <meta name="twitter:image" content="https://photography-course.vercel.app/og-image.jpg">
     
     <!-- Additional Meta Tags -->
@@ -48,6 +48,8 @@
             --accent: #ffffff;
             --border: #333333;
             --max-width: 900px;
+            --orange-main: #ff7b00;
+            --orange-shadow: rgba(0, 0, 0, 0.8);
         }
         
         * {
@@ -261,7 +263,11 @@
             line-height: 1.1;
             margin-bottom: 1rem;
             letter-spacing: -2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: var(--orange-main);
+            text-shadow: 
+                2px 2px 0px var(--orange-shadow),
+                4px 4px 8px var(--orange-shadow),
+                0 0 20px rgba(255, 123, 0, 0.3);
         }
         
         .hero-subtitle {
@@ -335,6 +341,11 @@
             letter-spacing: -0.5px;
             animation: fadeInUp 0.8s ease-out;
             text-align: center;
+            color: var(--orange-main);
+            text-shadow: 
+                2px 2px 0px var(--orange-shadow),
+                4px 4px 8px var(--orange-shadow),
+                0 0 15px rgba(255, 123, 0, 0.2);
         }
         
         .section-subtitle {
@@ -547,6 +558,11 @@
             text-align: center;
             position: relative;
             display: inline-block;
+            color: var(--orange-main);
+            text-shadow: 
+                2px 2px 0px var(--orange-shadow),
+                4px 4px 8px var(--orange-shadow),
+                0 0 18px rgba(255, 123, 0, 0.25);
         }
 
         .contact-title::before {
@@ -1132,7 +1148,7 @@
 
     <section class="section scroll-reveal" id="workshop">
         <h2 class="section-title">מה כוללת הסדנה</h2>
-        <p class="section-subtitle">שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית</p>
+        <p class="section-subtitle">שעתיים מעשיות שיפתחו לך את עולם היצירה הדיגיטלית:</p>
         
         <div class="workshop-grid">
             <div class="workshop-item">
@@ -1168,7 +1184,7 @@
                 <div class="details-column">
                     <h3>למי מיועדת הסדנה</h3>
                     <ul class="details-list">
-                        <li><strong>צוותים קהילתיים</strong> וגרעינים תורניים</li>
+                        <li><strong>צוותים קהילתיים, מוסדות וארגונים</strong> וגרעינים תורניים</li>
                         <li><strong>אנשי חינוך</strong>, מדריכים ושליחים</li>
                         <li><strong>בעלי עסקים קטנים</strong> ויוצרים</li>
                         <li>כל מי שיש לו <strong>מסר ורוצה להשפיע</strong></li>
